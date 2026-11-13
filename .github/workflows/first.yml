@@ -1,4 +1,5 @@
-name: GitHub Actions Demo By Sunny
+
+name: GitHub Actions Demo By ABC
 
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 
@@ -13,10 +14,10 @@ jobs:
 
     steps:
       - name: Display event
-        run: echo "Triggered by ${{ github.event_name }}"
+        run: 'echo "Triggered by ${{ github.event_name }}"'
 
       - name: Display runner
-        run: echo "Running on ${{ runner.os }}"
+        run: 'echo "Running on ${{ runner.os }}"'
 
       - name: Display repository
         run: 'echo "Repository: ${{ github.repository }}"'
@@ -28,4 +29,4 @@ jobs:
         run: ls -la
 
       - name: Display job status
-        run: echo "Job status: ${{ job.status }}"
+        run: 'echo "Job status: ${{ job.status }}"'
